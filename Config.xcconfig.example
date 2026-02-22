@@ -1,0 +1,5 @@
+// Copy this file to Config.xcconfig and fill in your server URL.
+// Config.xcconfig is gitignored and must never be committed.
+
+SLASH = /
+API_BASE_URL = http:$(SLASH)/YOUR_SERVER_IP:3000/api
