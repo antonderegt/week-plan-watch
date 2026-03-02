@@ -1,6 +1,6 @@
 # weekPlanWatch
 
-A watchOS SwiftUI app for weekly meal planning. Displays today's recipe on your Apple Watch — with an ingredients checklist and step-by-step cooking guide — by fetching live data from a local REST API backend.
+A watchOS SwiftUI app for weekly meal planning. Displays today's recipe on your Apple Watch — with an ingredients checklist and step-by-step cooking guide — by fetching live data from a local REST API backend. See [WeekPlan](https://github.com/antonderegt/week-plan/blob/main/README.md) for the main app. See [WeekPlan MCP](https://github.com/antonderegt/week-plan-mcp) on how to use AI to enter the recipes for you.
 
 ## How it works
 
