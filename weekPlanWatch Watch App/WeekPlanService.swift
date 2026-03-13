@@ -20,6 +20,7 @@ class WeekPlanService: ObservableObject {
     @Published var state: LoadState = .loading
 
     func load() async {
+        state = .loading
         do {
             async let ingredientsData = fetch([Ingredient].self, from: "\(baseURL)/ingredients")
             async let recipesData     = fetch([Recipe].self,     from: "\(baseURL)/recipes")

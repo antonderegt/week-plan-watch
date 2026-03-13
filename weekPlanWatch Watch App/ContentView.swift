@@ -19,7 +19,10 @@ struct ContentView: View {
             case .loaded(let recipe, let ingredients):
                 NavigationStack {
                     TabView {
-                        IngredientsView(recipe: recipe, ingredients: ingredients, checkedIDs: $checkedIDs)
+                        IngredientsView(recipe: recipe, ingredients: ingredients, checkedIDs: $checkedIDs, onRefresh: {
+                            checkedIDs = []
+                            Task { await service.load() }
+                        })
                         StepsView(recipe: recipe)
                     }
                     .tabViewStyle(.page)
